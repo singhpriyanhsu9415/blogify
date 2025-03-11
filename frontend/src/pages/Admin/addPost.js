@@ -24,7 +24,7 @@ export default function AddPost() {
       });
 
       const response = await axios.post(
-        "http://localhost:5000/blog/create",
+        "https://blogify-1irc.onrender.com/blog/create",
         formData
       );
       const data = response.data;

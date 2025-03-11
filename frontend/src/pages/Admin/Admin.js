@@ -10,7 +10,7 @@ function Admin() {
    useEffect(()=>{
      const GetData=async()=>{
        try {
-         const request= await axios.get('http://localhost:5000/dashboard')
+         const request= await axios.get('https://blogify-1irc.onrender.com/dashboard')
          const response= request.data
  
          console.log(response)

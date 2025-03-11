@@ -11,7 +11,7 @@ function AllPost() {
     useEffect(() => {
         const fetchPosts = async () => {
           try {
-            const response = await axios.get("http://localhost:5000/blog/GetPosts") // Replace with your API endpoint
+            const response = await axios.get("https://blogify-1irc.onrender.com/blog/GetPosts") // Replace with your API endpoint
             const data=response.data;
             setposts(data.posts);
             console.log(data)
@@ -27,7 +27,7 @@ function AllPost() {
       async function   handleDelete(postid)  {
           try {
             // Replace with your actual API endpoint
-            const response = await axios.delete(`http://localhost:5000/blog/delete/${postid}`);
+            const response = await axios.delete(`https://blogify-1irc.onrender.com/blog/delete/${postid}`);
       
             if (response.status === 204) {
               // Success (204 No Content is a common success status for DELETE)
@@ -55,7 +55,7 @@ function AllPost() {
               
             <div className="card h-100">
             <Link to={`/post/${post._id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-              <img src={`http://localhost:5000/images/${post.image}`}  className="card-img-top" alt="img" />
+              <img src={`https://blogify-1irc.onrender.com/images/${post.image}`}  className="card-img-top" alt="img" />
              
               <div className="card-body">
               

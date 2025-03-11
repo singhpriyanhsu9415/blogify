@@ -8,7 +8,7 @@ function Navbar() {
   const getUser=JSON.parse(localStorage.getItem('user'))
   async function handleclick() {
     try{
-          const response=await axios.post(`http://localhost:5000/auth/logout`)
+          const response=await axios.post(`https://blogify-1irc.onrender.com/auth/logout`)
           const user=localStorage.setItem('user',{});
           if(response.data.status===200){
             console.log("signout successfully"); 

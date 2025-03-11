@@ -20,7 +20,7 @@ function Post () {
 
     const fetchPost = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/GetSinglePost/Singlepost/${postId}`); // Replace with your API endpoint
+        const response = await axios.get(`https://blogify-1irc.onrender.com/GetSinglePost/Singlepost/${postId}`); // Replace with your API endpoint
         setPost(response.data.Post);
         setLoading(false);
       } catch (err) {
@@ -51,7 +51,7 @@ function Post () {
     
    
       try {
-        const request = await axios.post("http://localhost:5000/comment/addcomment", {
+        const request = await axios.post("https://blogify-1irc.onrender.com/comment/addcomment", {
           postId:postId,
           userId: getUser._id,
           comment:comment,
@@ -78,7 +78,7 @@ function Post () {
           <div className="col-md-12">
             <h1 className="fw-bold text-white mb-4 display-4">{post.title}</h1>
             <img 
-              src={`http://localhost:5000/images/${post.image}`} 
+              src={`https://blogify-1irc.onrender.com/images/${post.image}`} 
               alt="Exploring the Art of Writing" 
               className="img-fluid mb-4" 
               style={{ borderRadius: "10px", maxHeight: "500px", objectFit: "cover", width: "100%" }}
@@ -112,7 +112,7 @@ function Post () {
           return(
             <div className="bg-secondary p-3 rounded mb-3 d-flex">
             <img 
-             src={`http://localhost:5000/images/${elem.userId.profile}`}
+             src={`https://blogify-1irc.onrender.com/images/${elem.userId.profile}`}
               alt="John Doe" 
               className="rounded-circle me-3"
               style={{ width: "50px", height: "50px", objectFit: "cover" }}

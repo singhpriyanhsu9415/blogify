@@ -27,7 +27,7 @@ function Register () {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/auth/register', formData, {
+      const response = await axios.post('https://blogify-1irc.onrender.com/auth/register', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

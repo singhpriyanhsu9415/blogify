@@ -16,7 +16,7 @@ function User() {
       useEffect(()=>{
         const getuser=async()=>{
           try {
-              const resposne= await axios.get("http://localhost:5000/dashboard/users")
+              const resposne= await axios.get("https://blogify-1irc.onrender.com/dashboard/users")
               const data= resposne.data
               setUsers(data.Users)
               console.log(data)
