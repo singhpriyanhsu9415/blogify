@@ -29,7 +29,7 @@ function Navbar() {
               <div className="avatar-container pointer rounded-circle overflow-hidden bg-info" data-bs-toggle="dropdown" aria-expanded="false" style={{ width: '40px', height: '40px', cursor: "pointer" }}>
                 <img 
                   className="img-fluid h-100 w-100" 
-                  src={`http://localhost:5000/images/${getUser.profile}`}
+                  src='https://img.freepik.com/premium-photo/genius-worker-illustration-creative-genius-concept-brilliant-mind-graphic-innovative-thinker-artw_980716-58906.jpg?ga=GA1.1.314710026.1741268040&semt=ais_hybrid'
                   alt="Profile"
                   style={{objectFit:"cover"}}
                 />
