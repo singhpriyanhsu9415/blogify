@@ -1,7 +1,7 @@
 import UserModel from '../models/User.js';
 import jwt from 'jsonwebtoken'
 import fs from 'fs';
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 import { upload } from '../middleware/Multer.js';
 
 const Register = async (req, res) => {
